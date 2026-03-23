@@ -13,7 +13,14 @@ class KreaPlayApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Krea Play',
-      theme: ThemeData(useMaterial3: true),
+      theme: ThemeData(
+        useMaterial3: true,
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: const Color(0xFF1A1A2E),
+          brightness: Brightness.dark,
+        ),
+        fontFamily: 'SF Pro Display',
+      ),
       home: const LoginPage(),
     );
   }
